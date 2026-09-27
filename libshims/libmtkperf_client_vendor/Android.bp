@@ -1,5 +1,6 @@
 cc_library_shared {
-    name: "libmtkperf_client_vendor",
+    name: "libmtkperf_client_vendor_realme",
+    stem: "libmtkperf_client_vendor",
     vendor: true,
     srcs: [
         "libmtkperf_client_vendor.cpp",
@@ -18,7 +19,8 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libmtkperf_client",
+    name: "libmtkperf_client_realme",
+    stem: "libmtkperf_client",
     vendor: true,
     srcs: [
         "libmtkperf_client_vendor.cpp",
