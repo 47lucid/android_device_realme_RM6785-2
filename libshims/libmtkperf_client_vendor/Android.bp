@@ -1,0 +1,37 @@
+cc_library_shared {
+    name: "libmtkperf_client_vendor",
+    vendor: true,
+    srcs: [
+        "libmtkperf_client_vendor.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+        "libutils",
+        "android.hardware.power-V1-ndk",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
+
+cc_library_shared {
+    name: "libmtkperf_client",
+    vendor: true,
+    srcs: [
+        "libmtkperf_client_vendor.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+        "libutils",
+        "android.hardware.power-V1-ndk",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
