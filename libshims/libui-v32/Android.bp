@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libui-v32",
+    srcs: ["libui_v32.cpp"],
+    shared_libs: ["libdl", "liblog"],
+    vendor: true,
+    compile_multilib: "32",
+}
